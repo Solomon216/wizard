@@ -15,7 +15,7 @@ const Home = () => {
       }}
     >
       <Container className="home-container animate__animated animate__lightSpeedInLeft">
-        <h1>Wizardlenz Xr Studio</h1>
+        <h1>Wizardlenz XR Studio</h1>
       </Container>
     </HomeSectionStyled>
   );

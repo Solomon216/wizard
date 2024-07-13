@@ -6,7 +6,7 @@ import ContactInfoCard from "./ContactInfoCard";
 
 const ContactInfoBlock = () => {
   return (
-    <Row className="my-2">
+    <Row className="my-2 justify-content-center">
       {contactInfo.map((item, idx) => (
         <Col
           sm={12}
@@ -15,12 +15,13 @@ const ContactInfoBlock = () => {
           className="text-center my-2"
           key={idx}
         >
-          <AnimationOnScroll animateIn={`${"animate__fadeInLeft"}`}>
+          <AnimationOnScroll animateIn="animate__fadeInLeft">
             <ContactInfoCard {...item} />
           </AnimationOnScroll>
         </Col>
       ))}
     </Row>
+
   );
 };
 
