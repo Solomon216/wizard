@@ -5,6 +5,8 @@ import {Row, Image} from "react-bootstrap";
 export const RowReversedStyled = styled(Row)`
   @media (max-width: 991px) {
     flex-direction: column-reverse;
+    justify-items:center;
+    align-items:center;
   }
 `;
 

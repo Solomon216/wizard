@@ -8,9 +8,6 @@ const navlinks = [
   "Home",
   "About",
   "Services",
-  "Portfolio",
-  "Pricing",
-  "Team",
   "Contact",
 ];
 const Header = () => {
@@ -47,7 +44,7 @@ const Header = () => {
       <Navbar>
         <Container>
           <Link to="home" smooth>
-            <Navbar.Brand>DAY</Navbar.Brand>
+            <Navbar.Brand>Wizardlenz XR Studio</Navbar.Brand>
           </Link>
           <Nav className={`ms-auto${isOpen ? " nav-links-container" : ""}`}>
             <MdClose

@@ -1,59 +1,45 @@
 import React from "react";
-import {Col, Image} from "react-bootstrap";
+import {Col,Row, Image} from "react-bootstrap";
 import SectionContainer from "../../components/SectionContainer";
-import AboutBlocks from "./AboutBlocks";
-import AboutSponsor from "./AboutSponsor";
-import {AiOutlineCheckCircle} from "react-icons/ai";
+import SectionHead from "../../components/SectionHead";
 import {RowReversedStyled} from "./About.styled";
-import {paragraphs} from "./aboutData";
 import aboutImage from "../../assets/about.jpg";
 
 const About = () => {
   return (
     <>
       <SectionContainer id={"about"} secName={"about-sec"}>
-        <RowReversedStyled className="my-2">
-          <Col lg={6} className="mb-3">
-            <h3>
-              Voluptatem dignissimos provident quasi corporis voluptates sit
-              assumenda.
-            </h3>
-            <p className="fst-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-            <ul>
-              {paragraphs.map((par, idx) => (
-                <li className="mb-3" key={idx}>
-                  <AiOutlineCheckCircle
-                    className="me-1"
-                    size={24}
-                    color={"var(--ds-blood)"}
-                  />
-                  {par}
-                </li>
-              ))}
-            </ul>
-            <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-              irure dolor in reprehenderit in voluptate velit esse cillum dolore
-              eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-              proident, sunt in culpa qui officia deserunt mollit anim id est
-              laborum
-            </p>
+        <SectionHead
+          head={"about"}
+          text={
+            ""
+          }
+        />
+        <RowReversedStyled className="my-4">
+        <Row className="justify-content-center align-items-center">
+          <Col lg={6} className="mb-3 text-center">
+            <h4 className="fst-italic">
+              Wizardlenz XR Studio (OPC) Private Limited is a pioneering technology company specializing in 
+              immersive and futuristic technologies such as Virtual Reality (VR), Augmented Reality (AR), 
+              Mixed Reality (MR), the Metaverse, and Artificial Intelligence (AI). Our mission is to bridge the 
+              gap between these cutting-edge technologies and their practical applications in education, 
+              industry, and everyday life. We offer comprehensive training programs for students and 
+              professionals, providing placement opportunities for our graduates. Additionally, we develop 
+              innovative software products, create custom solutions for industrial clients, and promote 
+              social awareness about the transformative potential of these technologies.
+            </h4>
           </Col>
-          <Col lg={6} className="mb-3">
+          <Col lg={6} className="mb-3 text-center">
             <Image
               src={aboutImage}
               alt="about-img"
-              width="100%"
+              width="60%"
               height="auto"
             />
           </Col>
+        </Row>
         </RowReversedStyled>
-        <AboutBlocks />
       </SectionContainer>
-      <AboutSponsor />
     </>
   );
 };

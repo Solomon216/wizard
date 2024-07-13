@@ -16,11 +16,7 @@ const Home = () => {
       }}
     >
       <Container className="home-container animate__animated animate__lightSpeedInLeft">
-        <h1>WELCOME TO DAY</h1>
-        <h2>
-          We are team of talented designers making websites with Bootstrap
-        </h2>
-        <CustomButton type="btn-on-img">GET STARTED</CustomButton>
+        <h1>Wizardlenz Xr Studio</h1>
       </Container>
     </HomeSectionStyled>
   );
