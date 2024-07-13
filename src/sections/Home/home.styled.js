@@ -25,7 +25,7 @@ export const HomeSectionStyled = styled.section`
   .home-container {
     z-index: 3;
     h1 {
-      font-size: 70px;
+      font-size: 60px;
       font-weight: 700;
       font:bold;
       text-align:center;
