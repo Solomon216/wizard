@@ -9,7 +9,7 @@ const Services = () => {
       <SectionHead
         head={"services"}
         text={
-          "Sit sint consectetur velit quisquam cupiditate impedit suscipit alias"
+          ""
         }
       />
       <ServicesBlock />
