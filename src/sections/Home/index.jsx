@@ -1,6 +1,5 @@
 import React from "react";
 import {Container} from "react-bootstrap";
-import CustomButton from "../../components/CustomButton";
 import {HomeSectionStyled} from "./home.styled";
 import homeImg from "../../assets/home-bg.jpg";
 const Home = () => {
